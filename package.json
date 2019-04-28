@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/RadValentin/vali-city#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6"
   }
 }
