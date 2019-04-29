@@ -63,3 +63,4 @@ typings/
 # Parcel.js artefacts
 .cache
 .theia
+dist
