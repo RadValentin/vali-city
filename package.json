@@ -6,7 +6,8 @@
   "scripts": {
     "start": "parcel index.html",
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
