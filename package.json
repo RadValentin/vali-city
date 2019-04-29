@@ -1,0 +1,27 @@
+{
+  "name": "vali-city",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RadValentin/vali-city.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RadValentin/vali-city/issues"
+  },
+  "homepage": "https://github.com/RadValentin/vali-city#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "parcel-plugin-clean-dist": "0.0.6"
+  }
+}
