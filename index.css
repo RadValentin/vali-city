@@ -1,4 +1,9 @@
+:root {
+  --color-red: red;
+  --color-black: black;
+}
+
 h1 {
-  color: red;
-  text-shadow: 1px 1px black;
+  color: var(--color-red);
+  text-shadow: 1px 1px var(--color-black);
 }
