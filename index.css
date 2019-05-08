@@ -3,7 +3,20 @@
   --color-black: black;
 }
 
-h1 {
-  color: var(--color-red);
-  text-shadow: 1px 1px var(--color-black);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.vc-header {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-black);
+}
+
+.vc-header h1 {
+  color: pink;
+  font-family: 'Russo One', monospace;
+  text-transform: uppercase;
 }
