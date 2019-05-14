@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "dev": "parcel index.html",
+    "start": "parcel index.html --open",
+    "dev": "parcel index.html --open",
     "build": "parcel build index.html",
     "deploy": "npm run build && gh-pages -d dist"
   },
