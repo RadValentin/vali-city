@@ -8,7 +8,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   background-color: #000000;
-  background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-image: radial-gradient(#11581E, #041607), url("./assets/noise.gif");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Inconsolata', Helvetica, sans-serif;
@@ -24,7 +24,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
+  background-image: url("./assets/noise.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
