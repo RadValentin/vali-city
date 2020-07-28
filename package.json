@@ -29,7 +29,13 @@
   },
   "dependencies": {},
   "staticPath": {
-    "source": "/old-site/",
-    "target": "/dist/old-site/"
+    "source": [
+      "/old-site/",
+      "/CNAME"
+    ],
+    "target": [
+      "/dist/old-site/",
+      "/dist/CNAME"
+    ]
   }
 }
