@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.js"],"names":["console","log"],"mappings":";;;AACA,aADA,QAAA,eACAA,QAAQC,IAAI","file":"vali-city.22787464.js","sourceRoot":"..","sourcesContent":["import \"./index.css\";\nconsole.log('hello world');"]}
