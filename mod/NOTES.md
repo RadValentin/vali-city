@@ -1,1 +1,0 @@
-- GTA: Vali's City is a mod on top of "City of Lost Heaven" mod made by Denis Malina (http://denis-malina.narod.ru/)
