@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["require","console","log"],"mappings":";;;AAAAA,QAAQ,iBACRC,QAAQC,IAAI","file":"vali-city.70df4ae7.js","sourceRoot":"..","sourcesContent":["require('normalize.css');\r\nconsole.log('hello world');"]}
