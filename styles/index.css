@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Inconsolata', Helvetica, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
 }
 
@@ -27,6 +27,14 @@ h1 {
   text-shadow:
       0 0 1ex rgba(51, 255, 51, 1),
       0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+h2 {
+  color: rgba(51, 255, 51, 1);
+}
+
+blockquote {
+  background-color: #333;
 }
 
 .noise {
