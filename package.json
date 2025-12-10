@@ -33,11 +33,15 @@
   "staticPath": {
     "source": [
       "/old-site/",
-      "/CNAME"
+      "/CNAME",
+      "/robots.txt",
+      "/sitemap.xml"
     ],
     "target": [
       "/dist/old-site/",
-      "/dist/CNAME"
+      "/dist/CNAME",
+      "/dist/robots.txt",
+      "/dist/sitemap.xml"
     ]
   }
 }
