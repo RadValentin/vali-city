@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100%;
 }
@@ -10,11 +14,15 @@ body {
   box-sizing: border-box;
   height: 100%;
   background-color: #000000;
-  background-image: radial-gradient(#11581E, #041607), url("./assets/noise.gif");
+  background-image: radial-gradient(#11581E, #041607), url("../assets/noise.gif");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Inconsolata', Helvetica, sans-serif;
   font-size: 1.5rem;
+  color: #fff;
+}
+
+h1 {
   color: rgba(128, 255, 128, 0.8);
   text-shadow:
       0 0 1ex rgba(51, 255, 51, 1),
@@ -26,7 +34,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/noise.gif");
+  background-image: url("../assets/noise.gif");
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -77,12 +85,22 @@ body {
 
 .terminal {
   box-sizing: inherit;
-  position: absolute;
-  height: 100%;
   width: 1000px;
   max-width: 100%;
   padding: 4rem;
-  text-transform: uppercase;
+}
+
+.content {
+  padding: 0 1.5rem 1.5rem;
+  background-color: #000000;
+  position: relative;
+  z-index: 2;
+  overflow: auto;
+}
+
+.content ul li::marker {
+  content: "> ";
+  color: #fff;
 }
 
 .output {
@@ -92,11 +110,6 @@ body {
       0 0 1px rgba(51, 255, 51, 0.4),
       0 0 2px rgba(255, 255, 255, 0.8);
 }
-
-.output::before {
-  content: "> ";
-}
-
 
 .input {
   color: rgba(192, 255, 192, 0.8);

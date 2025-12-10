@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "dev": "parcel index.html --open",
-    "build": "parcel build index.html",
+    "build:content": "node scripts/build-content.js",
+    "watch:content": "node scripts/build-content.js --watch",
+    "start": "npm run build:content && parcel index.html --open",
+    "dev": "npm run watch:content & parcel index.html",
+    "build": "npm run build:content && parcel build index.html",
     "deploy": "npm run build && gh-pages -d dist"
   },
   "repository": {
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/RadValentin/vali-city#readme",
   "devDependencies": {
+    "marked": "^12.0.1",
     "gh-pages": "^6.3.0",
     "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.12.4",
