@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts/index.js"],"names":["require","console","log"],"mappings":";;;AAAAA,QAAQ,iBACRC,QAAQC,IAAI","file":"scripts.3d64c074.js","sourceRoot":"..","sourcesContent":["require('normalize.css');\r\nconsole.log('hello world');"]}
