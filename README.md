@@ -11,10 +11,10 @@ First install dependencies:
 npm install
 ```
 
-To run in hot module reloading mode:
+To run dev mode with auto-reloading:
 
 ```sh
-npm start
+npm run dev
 ```
 
 To create a production build:
