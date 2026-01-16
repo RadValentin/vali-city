@@ -3,5 +3,8 @@
   "reporters":  ["...", "parcel-reporter-static-files-copy"],
   "transformers": {
     "*.{zip,tgz}": ["@parcel/transformer-raw"]
+  },
+  "optimizers": {
+    "*.html": []
   }
 }
