@@ -2,8 +2,8 @@
   "name": "vali-city",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "prebuild": "rimraf dist",
     "build:content": "node scripts/build-content.js",
     "watch:content": "node scripts/build-content.js --watch",
     "start": "npm run build:content && parcel index.html --open",
@@ -23,26 +23,26 @@
   },
   "homepage": "https://github.com/RadValentin/vali-city#readme",
   "devDependencies": {
+    "@parcel/config-default": "^2.16.3",
+    "@parcel/packager-raw-url": "^2.16.3",
+    "@parcel/transformer-jsonld": "^2.16.3",
+    "@parcel/transformer-raw": "^2.16.3",
     "concurrently": "^8.2.2",
-    "marked": "^12.0.1",
     "gh-pages": "^6.3.0",
+    "marked": "^12.0.1",
     "normalize.css": "^8.0.1",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-copy": "^1.0.2",
-    "parcel-plugin-nuke-dist": "^1.0.0"
+    "parcel": "^2.16.3",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "rimraf": "^6.1.2"
   },
-  "staticPath": {
-    "source": [
-      "/old-site/",
-      "/CNAME",
-      "/robots.txt",
-      "/sitemap.xml"
-    ],
-    "target": [
-      "/dist/old-site/",
-      "/dist/CNAME",
-      "/dist/robots.txt",
-      "/dist/sitemap.xml"
-    ]
-  }
+  "staticFiles": [
+    {
+      "staticPath": "old-site",
+      "staticOutPath": "old-site"
+    },
+    {"staticPath": "CNAME"},
+    {"staticPath": "robots.txt"},
+    {"staticPath": "sitemap.xml"}
+  ],
+  "browserslist": "> 0.3%"
 }
