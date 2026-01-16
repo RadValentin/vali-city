@@ -43,5 +43,6 @@
     {"staticPath": "CNAME"},
     {"staticPath": "robots.txt"},
     {"staticPath": "sitemap.xml"}
-  ]
+  ],
+  "browserslist": "> 0.3%"
 }
