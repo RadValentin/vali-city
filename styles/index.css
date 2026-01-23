@@ -147,3 +147,25 @@ a::after {
 .errorcode {
   color: white;
 }
+
+
+.gallery-grid {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1;
+  margin: .3rem;
+}
+
+.gallery-item figcaption {
+  text-align: center;
+  font-size: .8em;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+}
