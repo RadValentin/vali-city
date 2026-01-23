@@ -37,9 +37,28 @@ blockquote {
   background-color: #333;
 }
 
+a {
+  color: rgba(128, 255, 128, 0.8);
+  text-decoration: none;
+}
+
+a::before {
+  content: "[";
+}
+
+a::after {
+  content: "]";
+}
+
+.errorcode {
+  color: white;
+}
+
+/* BACKGROUND */
+
 .noise {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-image: url("../assets/noise.gif");
@@ -51,7 +70,7 @@ blockquote {
 
 .overlay {
   pointer-events: none;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background:
@@ -91,6 +110,8 @@ blockquote {
   35%, 100% { background-position: 0 100vh; }
 }
 
+/* CONTENT  */
+
 .terminal {
   box-sizing: inherit;
   width: 1000px;
@@ -129,25 +150,6 @@ blockquote {
 .input::before {
   content: "$ ";
 }
-
-
-a {
-  color: rgba(128, 255, 128, 0.8);
-  text-decoration: none;
-}
-
-a::before {
-  content: "[";
-}
-
-a::after {
-  content: "]";
-}
-
-.errorcode {
-  color: white;
-}
-
 
 .gallery-grid {
   display: flex;
