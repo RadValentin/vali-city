@@ -50,8 +50,8 @@ a::after {
   content: "]";
 }
 
-.errorcode {
-  color: white;
+strong {
+  color: #FB7E14;
 }
 
 /* BACKGROUND */
@@ -130,6 +130,10 @@ a::after {
 .content ul li::marker {
   content: "> ";
   color: #fff;
+}
+
+.errorcode {
+  color: white;
 }
 
 .output {
