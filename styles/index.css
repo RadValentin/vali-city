@@ -180,6 +180,10 @@ strong {
   height: auto;
 }
 
+footer {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   ul {
     padding-inline-start: 1rem;
