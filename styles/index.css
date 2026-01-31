@@ -22,6 +22,10 @@ body {
   color: #fff;
 }
 
+iframe, object, embed {
+    max-width: 100%;
+}
+
 h1 {
   color: rgba(128, 255, 128, 0.8);
   text-shadow:
@@ -174,4 +178,24 @@ strong {
 .gallery-item img {
   max-width: 100%;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  ul {
+    padding-inline-start: 1rem;
+  }
+
+  .terminal {
+    width: auto;
+    max-width: none;
+    padding: 2rem;
+  }
+
+  .vc-logo {
+    margin-top: 0;
+  }
+
+  .gallery-item figcaption {
+    font-size: .6em;
+  }
 }

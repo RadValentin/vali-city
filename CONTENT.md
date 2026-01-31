@@ -3,7 +3,7 @@
 
 La bază stă alt mod, "City of Lost Heaven" (inspirat de Mafia 1), pe care Vali's City îl extinde, adăugând o savoare românească cu misiuni, mașini, locații personalizate.
 
-Caracteristici iconice:
+**Caracteristici iconice:**
 - 12 misiuni (4 principale + 8 secundare via telefon mobil cu TAB)
 - Vehicule sport, arme noi, 12 outfit-uri, 22 skin-uri
 - Radio custom: *B.U.G. Mafia*, *Ca&dollar;&dollar;a Loco*, *Nightwish* și *VALI'S ROCK*
