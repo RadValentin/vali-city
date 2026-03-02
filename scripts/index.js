@@ -7,20 +7,6 @@ const lightboxImage = document.querySelector('.lightbox-overlay img');
 const lightboxCaption = document.querySelector('.lightbox-overlay .caption');
 const lightboxCloseBtn = document.querySelector('.lightbox-content .btn-close');
 
-/* Close lightbox */
-function closeLightbox(e) {
-  lightboxOverlay.style.display = 'none';
-  lightboxImage.removeAttribute('src');
-  lightboxCaption.textContent = '';
-}
-
-lightboxCloseBtn.addEventListener('click', closeLightbox);
-document.addEventListener('keydown', function(e) {
-  if (e.code === 'Escape') {
-    closeLightbox();
-  }
-});
-
 /* Open lightbox */
 const galleryImages = [...document.querySelectorAll('.gallery-item img')];
 const contentDiv = document.querySelector('.content');
@@ -50,22 +36,50 @@ contentDiv.addEventListener('click', function(e) {
 });
 
 /* Cycle through lightbox images */
-lightboxNext.addEventListener('click', function (e) {
-  const imgIndex = galleryImages.findIndex(
+function showNextImageInLightbox() {
+    const imgIndex = galleryImages.findIndex(
     img => lightboxImage.getAttribute('src').includes(img.getAttribute('src'))
   )
 
   if (imgIndex < galleryImages.length - 1) {
     showImageInLightbox(galleryImages[imgIndex + 1]);
   }
-});
+}
 
-lightboxPrev.addEventListener('click', function (e) {
+function showPrevImageInLightbox() {
   const imgIndex = galleryImages.findIndex(
     img => lightboxImage.getAttribute('src').includes(img.getAttribute('src'))
   )
 
   if (imgIndex > 0) {
     showImageInLightbox(galleryImages[imgIndex - 1]);
+  }
+}
+
+lightboxNext.addEventListener('click', showNextImageInLightbox);
+lightboxPrev.addEventListener('click', showPrevImageInLightbox);
+
+/* Close lightbox */
+function closeLightbox(e) {
+  lightboxOverlay.style.display = 'none';
+  lightboxImage.removeAttribute('src');
+  lightboxCaption.textContent = '';
+}
+
+lightboxCloseBtn.addEventListener('click', closeLightbox);
+// keyboard navigation
+document.addEventListener('keydown', function(e) {
+  const isLightboxVisible = lightboxOverlay.style.display !== 'none';
+
+  if (!isLightboxVisible) {
+    return;
+  }
+
+  if (e.code === 'Escape') {
+    closeLightbox();
+  } else if (e.code === 'ArrowRight') {
+    showNextImageInLightbox();
+  } else if (e.code === 'ArrowLeft') {
+    showPrevImageInLightbox();
   }
 });

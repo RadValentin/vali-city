@@ -44,6 +44,11 @@ blockquote {
 a {
   color: rgba(128, 255, 128, 0.8);
   text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  text-shadow: 0 0 8px rgba(0,255,120,0.6);
 }
 
 a::before {
