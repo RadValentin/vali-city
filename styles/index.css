@@ -84,7 +84,7 @@ strong {
       rgba(0, 0, 0, 0.3) 50%,
       rgba(0, 0, 0, 0) 100%);
   background-size: auto 4px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .overlay::before {
@@ -127,7 +127,7 @@ strong {
   padding: 0 1.5rem 1.5rem;
   background-color: #000000;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
   overflow: auto;
 }
 
@@ -176,6 +176,7 @@ strong {
 }
 
 .gallery-item img {
+  cursor: pointer;
   max-width: 100%;
   height: auto;
 }
@@ -202,4 +203,80 @@ footer {
   .gallery-item figcaption {
     font-size: .6em;
   }
+}
+
+/* Lightbox */
+
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lightbox-overlay button {
+  font-family: 'Share Tech Mono', monospace;
+  background: transparent;
+  color: #1aff66;
+  border: 1px solid #1aff66;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.lightbox-overlay button:hover {
+  background: rgba(0,255,120,0.1);
+  box-shadow: 0 0 8px rgba(0,255,120,0.6);
+}
+
+.lightbox-overlay button:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 4px rgba(0,255,120,0.8);
+}
+
+.lightbox-content {
+  display: flex;
+  flex-direction: column;
+  background: #0b0f0c;
+  max-width: 90vw;
+  max-height: 90vh;
+  box-shadow: 0 0 12px rgba(0,255,120,0.25),
+              2px 2px 40px rgba(0, 0, 0, 0.8),
+              -2px -2px 40px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-header {
+  background-color: #222;
+  text-align: right;
+}
+
+.lightbox-header .btn-close {
+  border: 0px none;
+}
+
+.lightbox-content img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 70vh;
+}
+
+.lightbox-content .caption {
+  margin: 0;
+  padding: 8px 0 10px;
+  text-align: center;
+  color: rgba(51, 255, 51, 1);
+}
+
+.lightbox-footer {
+  display: flex;
+  justify-content: space-between;
 }
