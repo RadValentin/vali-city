@@ -23,7 +23,7 @@ body {
 }
 
 iframe, object, embed {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h1 {
@@ -48,7 +48,7 @@ a {
 }
 
 a:hover {
-  text-shadow: 0 0 8px rgba(0,255,120,0.6);
+  text-shadow: 0 0 10px rgba(0, 255, 120, 1);
 }
 
 a::before {
@@ -132,7 +132,6 @@ strong {
   padding: 0 1.5rem 1.5rem;
   background-color: #000000;
   position: relative;
-  /* z-index: 2; */
   overflow: auto;
 }
 
@@ -227,7 +226,7 @@ footer {
 }
 
 .lightbox-overlay button {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Inconsolata', monospace;
   background: transparent;
   color: #1aff66;
   border: 1px solid #1aff66;

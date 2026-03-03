@@ -2,7 +2,6 @@ require('normalize.css');
 
 /* Image gallery (lightbox) functionality */
 const lightboxOverlay = document.querySelector('.lightbox-overlay');
-const lightboxContent = document.querySelector('.lightbox-content');
 const lightboxImage = document.querySelector('.lightbox-overlay img');
 const lightboxCaption = document.querySelector('.lightbox-overlay .caption');
 const lightboxCloseBtn = document.querySelector('.lightbox-content .btn-close');
@@ -14,7 +13,8 @@ const lightboxNext = document.querySelector('.lightbox-content .btn-next');
 const lightboxPrev = document.querySelector('.lightbox-content .btn-prev');
 
 function showImageInLightbox(imageNode) {
-  const captionText = imageNode.parentElement.querySelector('figcaption').textContent;
+  const captionElement = imageNode.parentElement.querySelector('figcaption');
+  const captionText = captionElement ? captionElement.textContent : '';
   const imgIndex = galleryImages.indexOf(imageNode);
 
   // show/hide next/prev buttons
@@ -22,10 +22,7 @@ function showImageInLightbox(imageNode) {
   lightboxNext.style.visibility = imgIndex === galleryImages.length - 1 ? 'hidden': 'visible';
 
   lightboxImage.setAttribute('src', imageNode.src);
-
-  if (captionText) {
-    lightboxCaption.textContent = captionText;
-  }
+  lightboxCaption.textContent = captionText;
 }
 
 contentDiv.addEventListener('click', function(e) {
@@ -37,9 +34,13 @@ contentDiv.addEventListener('click', function(e) {
 
 /* Cycle through lightbox images */
 function showNextImageInLightbox() {
-    const imgIndex = galleryImages.findIndex(
+  const imgIndex = galleryImages.findIndex(
     img => lightboxImage.getAttribute('src').includes(img.getAttribute('src'))
   )
+
+  if (imgIndex === -1) {
+    return;
+  }
 
   if (imgIndex < galleryImages.length - 1) {
     showImageInLightbox(galleryImages[imgIndex + 1]);
@@ -50,6 +51,10 @@ function showPrevImageInLightbox() {
   const imgIndex = galleryImages.findIndex(
     img => lightboxImage.getAttribute('src').includes(img.getAttribute('src'))
   )
+
+  if (imgIndex === -1) {
+    return;
+  }
 
   if (imgIndex > 0) {
     showImageInLightbox(galleryImages[imgIndex - 1]);
