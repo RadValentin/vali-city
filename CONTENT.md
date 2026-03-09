@@ -3,7 +3,7 @@
 
 La bază stă alt mod, "City of Lost Heaven" (inspirat de Mafia 1), pe care Vali's City îl extinde, adăugând o savoare românească cu misiuni, mașini, locații personalizate.
 
-Caracteristici iconice:
+**Caracteristici iconice:**
 - 12 misiuni (4 principale + 8 secundare via telefon mobil cu TAB)
 - Vehicule sport, arme noi, 12 outfit-uri, 22 skin-uri
 - Radio custom: *B.U.G. Mafia*, *Ca&dollar;&dollar;a Loco*, *Nightwish* și *VALI'S ROCK*
@@ -32,7 +32,7 @@ Astăzi, 20+ de ani mai târziu, Vali's City trăiește datorită fanilor. Vă m
 - [Descarcă .RAR](https://1drv.ms/u/c/fda6ec336a4f80ef/IQDxlAXOiswJQ6BxBqbUijP_AXxkXp9ht0Fx4aHLDrIe02U?e=vPAVb8) 💾
 - [Descarcă .TORRENT](./assets/GTA-Vali-City-RC2.torrent) 💿
 - [Vezi site-ul VECHI – 2005](./old-site/index.html) 🏛️
-- [Descarcă *City of Lost Heaven*](https://github.com/RadValentin/gta-city-of-lost-heaven/releases/latest/)
+- [Descarcă *City of Lost Heaven*](https://github.com/RadValentin/gta-city-of-lost-heaven/releases/latest/) 📻
 
 ## Despre Vali's City
 ### Cum a apărut modul

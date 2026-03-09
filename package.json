@@ -1,7 +1,7 @@
 {
   "name": "vali-city",
   "version": "1.0.0",
-  "description": "",
+  "description": "Matrix themed total conversion mod for GTA:VC made in Romania",
   "scripts": {
     "prebuild": "rimraf dist",
     "build:content": "node scripts/build-content.js",
@@ -16,8 +16,8 @@
     "url": "git+https://github.com/RadValentin/vali-city.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Valentin Radulescu (https://valentin.io/)",
+  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/RadValentin/vali-city/issues"
   },
