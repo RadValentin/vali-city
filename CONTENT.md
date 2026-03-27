@@ -60,9 +60,9 @@ Când am început să modez, "City of Lost Heaven" îl aveam doar în rusă, iar
 
 Mod-ul l-am făcut în primul rând pentru mine și pentru câțiva colegi de școală. Nu intenționam să-l distribui prin țară — nici nu aveam cum — și, sincer, cei care l-au jucat atunci erau mai degrabă ambivalenți: era ok, dar cam atât.
 
-Marea mea dezamăgire legată de Vali's City și motivul pentru care m-am lăsat de modding a fost faptul că o versiune "beta" a început să circule prin școală la începutul lui 2005. În scurt timp a ajuns în sălile de calculatoare din oraș și mai departe în țară; aceasta este, de fapt, versiunea **RC1** pe care mulți au jucat-o. Odată ce lumea juca modul în stadiu beta, interesul lor pentru update-uri sau pentru o variantă finală a dispărea aproape complet.
+Marea mea dezamăgire legată de Vali's City și motivul pentru care m-am lăsat de modding a fost faptul că o versiune "beta" a început să circule prin școală la începutul lui 2005. În scurt timp a ajuns în sălile de calculatoare din oraș și mai departe în țară; aceasta este, de fapt, versiunea **RC1** pe care mulți au jucat-o. Odată ce lumea juca modul în stadiu beta, interesul lor pentru update-uri sau pentru o variantă finală dispărea aproape complet.
 
-Lucrul acesta m-a demotivat puternic. Aveam senzația că muncesc degeaba și mă frustra faptul că nu am reușit să-l lansez atunci când mi-aș fi dorit, într-o formă mai finisată. Versiunea **RC2** lansată în primăvara lui 2005, care a devenit și finală, a fost încercarea mea de a duce la capăt ce începusem, dar interesul pentru mod deja se risipise. Aceasta a început să se răspândească abia prin 2010, când, la cererea unor fani am pus-o online (cred că pe Pirate Bay). Sper ca varianta **Reloaded**, la care se lucrează momentan, să fie într-un fel "cum ar fi arătat" Vali City dacă aș fi reușit să-l duc la bun sfârșit.
+Lucrul acesta m-a demotivat puternic. Aveam senzația că muncesc degeaba și mă frustra faptul că nu am reușit să-l lansez atunci când mi-aș fi dorit, într-o formă mai finisată. Versiunea **RC2** lansată în primăvara lui 2005, care a devenit și finală, a fost încercarea mea de a duce la capăt ce începusem, dar interesul pentru mod deja se risipise. Aceasta a început să se răspândească abia prin 2010, când, la cererea unor fani, am pus-o online (cred că pe Pirate Bay). Sper ca varianta **Reloaded**, la care se lucrează momentan, să fie într-un fel "cum ar fi arătat" Vali City dacă aș fi reușit să-l duc la bun sfârșit.
 
 ### Despre personaje
 
@@ -149,3 +149,5 @@ Sunetul ambiental din "North Point Mall" (Metro) este luat din Half-Life 2, cred
     <figcaption>Panou Băsescu</figcaption>
   </figure>
 </div>
+
+Privind înapoi, Vali's City reprezintă mai mult o fotografie a anilor 2000 și a începuturilor modding-ului românesc, decât un produs finit.
