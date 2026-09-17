@@ -4,7 +4,7 @@ const { marked } = require('marked');
 
 const root = path.join(__dirname, '..');
 const templatePath = path.join(root, 'index.template.html');
-const markdownPath = path.join(root, 'content.md');
+const markdownPath = path.join(root, 'CONTENT.md');
 const outputPath = path.join(root, 'index.html');
 
 function buildContent() {
